@@ -1,4 +1,4 @@
-import React from "react";
+import Button from "./Button";
 
 export default function FormSplitBill() {
   return (
@@ -7,15 +7,19 @@ export default function FormSplitBill() {
 
       <label>💰 Bill value</label>
       <input type="text" />
+
       <label>👤 Your Expense </label>
       <input type="text" />
-      <label>👩🏼‍🤝‍🧑🏾 X's Expense </label>
+
+      <label>👩🏼‍🤝‍🧑🏾 Xs Expense </label>
       <input type="text" disabled />
+
       <label>🤑 Who is paying the bill? </label>
       <select>
         <option value="user">You</option>
         <option value="friend">X</option>
       </select>
+      <Button>Split Bill</Button>
     </form>
   );
 }
